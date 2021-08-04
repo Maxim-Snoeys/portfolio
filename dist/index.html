@@ -2,7 +2,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Maxim Snoeys</title>
+    <title>Portfolio | Maxim Snoeys</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Tourney&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="static">
@@ -57,15 +58,15 @@
     </div>
 </section>
 
-<section id="me" class="min-h-screen bg-green-200 flex text-black pt-16">
+<section id="me" class="min-h-screen bg-black text-white flex pt-16">
     <div class="m-auto container">
-        <h1 class="text-center mb-8 md:mb-28 underline text-6xl font-semibold font-titel">Me</h1>
+        <h1 class="text-center mb-8 md:mb-28 underline text-6xl font-semibold font-titel" data-aos="zoom-in">Me</h1>
 
-        <div class="">
+        <div class="" data-aos="zoom-in">
             <img src="./assets/img/maxim.jpg" alt="Maxim Snoeys" class="rounded-full m-auto">
         </div>
 
-        <div class="hidden md:block">
+        <div class="hidden md:block" data-aos="zoom-in">
             <div class="flex flex-row justify-center mt-16">
                 <div class="mx-8">
                     <a href="#">
@@ -93,39 +94,76 @@
             </div>
         </div>
 
-        <div class="md:hidden justify-center text-center mt-16 grid grid-cols-2">
-            <div class=" my-8">
-                <a href="">
-                    <i class="fab fa-linkedin fa-5x"></i>
-                </a>
+        <div class="md:hidden justify-center text-center mt-16" >
+            <div class="grid grid-cols-2" data-aos="flip-up">
+                <div class="my-8">
+                    <a href="">
+                        <i class="fab fa-linkedin fa-5x"></i>
+                    </a>
+                </div>
+
+                <div class="my-8">
+                    <a href="">
+                        <i class="fab fa-twitter fa-5x"></i>
+                    </a>
+                </div>
             </div>
 
-            <div class=" my-8">
-                <a href="">
-                    <i class="fab fa-twitter fa-5x"></i>
-                </a>
+            <div class="grid grid-cols-2" data-aos="flip-up">
+                <div class="my-8">
+                    <a href="">
+                        <i class="fas fa-envelope fa-5x"></i>
+                    </a>
+                </div>
+
+                <div class="my-8">
+                    <a href="">
+                        <i class="fab fa-discord fa-5x"></i>
+                    </a>
+                </div>
             </div>
 
-            <div class=" my-8">
-                <a href="">
-                    <i class="fas fa-envelope fa-5x"></i>
-                </a>
-            </div>
-
-            <div class=" my-8">
-                <a href="">
-                    <i class="fab fa-discord fa-5x"></i>
-                </a>
-            </div>
         </div>
     </div>
 </section>
 
-<section id="projects" class="min-h-screen bg-blue-200 text-black pt-16">
+<section id="projects" class="min-h-screen bg-black text-white pt-16 flex">
+    <div class="m-auto container">
+        <h1 class="text-center mb-8 md:mb-28 underline text-6xl font-semibold font-titel" data-aos="zoom-in">Projects</h1>
 
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="mt-12 px-8 transform lg:hover:scale-95 duration-300 ease-in-out">
+                <a href="project1.html">
+                    <div id="project1" class="border-b-4 border-r-4 border-pink-300 rounded-br-3xl py-4 grid grid-cols-5 gap-4" data-aos="zoom-in">
+                        <img src="./assets/img/zwemmer.jpg" alt="Zwemmer" class="rounded-xl mr-auto col-span-2">
+                        <h2 class="text-center text-2xl lg:text-4xl font-titelklein col-span-3 my-auto">Project PHP</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="mt-12 px-8 transform lg:hover:scale-95 duration-300 ease-in-out">
+                <a href="project2.html">
+                    <div id="project2" class="border-b-4 border-r-4 border-pink-300 rounded-br-3xl py-4 grid grid-cols-5 gap-4" data-aos="zoom-in">
+                        <img src="./assets/img/zwemmer.jpg" alt="Zwemmer" class="rounded-xl mr-auto col-span-2">
+                        <h2 class="text-center text-2xl lg:text-4xl font-titelklein col-span-3 my-auto">Cordova</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="mt-12 px-8 transform lg:hover:scale-95 duration-300 ease-in-out">
+                <a href="project3.html">
+                    <div id="project3" class="border-b-4 border-r-4 border-pink-300 rounded-br-3xl py-4 grid grid-cols-5 gap-4" data-aos="zoom-in">
+                        <img src="./assets/img/zwemmer.jpg" alt="Zwemmer" class="rounded-xl mr-auto col-span-2">
+                        <h2 class="text-center text-2xl lg:text-4xl font-titelklein col-span-3 my-auto">Portfolio</h2>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
 </section>
 
-<section id="yeet" class="min-h-screen bg-green-200 text-black pt-16">
+<section id="yeet" class="min-h-screen bg-black text-white pt-16">
 
 </section>
 
@@ -138,6 +176,14 @@
         nav.classList.toggle('flex');
         nav.classList.toggle('hidden');
     }
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 800
+    });
 </script>
 </body>
 </html>
