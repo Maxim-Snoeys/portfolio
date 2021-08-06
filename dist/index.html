@@ -8,7 +8,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Tourney&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Tourney&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
@@ -17,7 +17,7 @@
 <body class="static">
 
 <nav id="site-menu"
-     class="z-40 flex flex-col md:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-gray-100 border-t-4 fixed top-0 ">
+     class="z-40 flex flex-col md:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-gray-100 border-t-4 fixed top-0">
     <div class="w-full md:w-auto self-start md:self-center flex flex-row md:flex-none flex-no-wrap justify-between items-center lg:ml-2">
         <a href="#" class="no-underline py-1">
             <h1 class="font-bold text-lg tracking-widest font-titel text-2xl">Maxim Snoeys</h1>
@@ -38,9 +38,9 @@
             <span class="hover:border-pink-300 hover:border-b-4 transition ease-in-out duration-300 font-titel text-2xl">Projects</span>
         </a>
         <a class="text-dark font-bold text-lg w-full no-underline md:w-auto md:px-4 py-2 md:py-1 md:pt-2"
-           href="#yeet"
+           href="#cv"
            onclick="navToggle()">
-            <span class="hover:border-pink-300 hover:border-b-4 transition ease-in-out duration-300 font-titel text-2xl">Yeet</span>
+            <span class="hover:border-pink-300 hover:border-b-4 transition ease-in-out duration-300 font-titel text-2xl">CV</span>
         </a>
     </div>
 </nav>
@@ -60,33 +60,35 @@
 
 <section id="me" class="min-h-screen bg-black text-white flex pt-16">
     <div class="m-auto container">
-        <h1 class="text-center mb-8 md:mb-28 underline text-6xl font-semibold font-titel" data-aos="zoom-in">Me</h1>
+        <h1 class="text-center mb-8 md:mb-20 underline text-6xl font-semibold font-titel" data-aos="zoom-in" data-aos-easing="linear">Me</h1>
 
-        <div class="" data-aos="zoom-in">
-            <img src="./assets/img/maxim.jpg" alt="Maxim Snoeys" class="rounded-full m-auto">
+        <div class="lg:flex lg:w-3/5 lg:m-auto" >
+            <img src="./assets/img/maxim.jpg" alt="Maxim Snoeys" class="rounded-full m-auto lg:flex-none" data-aos="zoom-in" data-aos-easing="linear">
+            <p class="text-center m-auto px-8 pt-8 lg:pt-0 lg:flex-1" data-aos="zoom-in" data-aos-easing="linear">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut deleniti facilis ipsam iusto minima nobis pariatur
+                praesentium reiciendis similique tempora? Animi esse ex provident. Aliquam et odit quae qui vitae.</p>
         </div>
 
-        <div class="hidden md:block" data-aos="zoom-in">
+        <div class="hidden md:block" data-aos="zoom-in" data-aos-easing="linear">
             <div class="flex flex-row justify-center mt-16">
-                <div class="mx-8">
+                <div class="mx-8 transform lg:hover:scale-90 duration-300 ease-in-out">
                     <a href="#">
                         <i class="fab fa-linkedin fa-5x"></i>
                     </a>
                 </div>
 
-                <div class="mx-8">
+                <div class="mx-8 transform lg:hover:scale-90 duration-300 ease-in-out">
                     <a href="">
                         <i class="fab fa-twitter fa-5x"></i>
                     </a>
                 </div>
 
-                <div class="mx-8">
+                <div class="mx-8 transform lg:hover:scale-90 duration-300 ease-in-out">
                     <a href="">
                         <i class="fas fa-envelope fa-5x"></i>
                     </a>
                 </div>
 
-                <div class="mx-8">
+                <div class="mx-8 transform lg:hover:scale-90 duration-300 ease-in-out">
                     <a href="">
                         <i class="fab fa-discord fa-5x"></i>
                     </a>
@@ -94,8 +96,8 @@
             </div>
         </div>
 
-        <div class="md:hidden justify-center text-center mt-16" >
-            <div class="grid grid-cols-2" data-aos="flip-up">
+        <div class="md:hidden justify-center text-center mt-16">
+            <div class="grid grid-cols-2" data-aos="zoom-in" data-aos-easing="linear">
                 <div class="my-8">
                     <a href="">
                         <i class="fab fa-linkedin fa-5x"></i>
@@ -109,7 +111,7 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-2" data-aos="flip-up">
+            <div class="grid grid-cols-2" data-aos="zoom-in" data-aos-easing="linear">
                 <div class="my-8">
                     <a href="">
                         <i class="fas fa-envelope fa-5x"></i>
@@ -127,45 +129,106 @@
     </div>
 </section>
 
-<section id="projects" class="min-h-screen bg-black text-white pt-16 flex">
+<section id="projects" class="min-h-screen bg-black text-white flex pt-16">
     <div class="m-auto container">
-        <h1 class="text-center mb-8 md:mb-28 underline text-6xl font-semibold font-titel" data-aos="zoom-in">Projects</h1>
+        <h1 class="text-center mb-8 md:mb-20 underline text-6xl font-semibold font-titel" data-aos="zoom-in" data-aos-easing="linear">Projects</h1>
 
         <div class="grid grid-cols-1 lg:grid-cols-2">
-            <div class="mt-12 px-8 transform lg:hover:scale-95 duration-300 ease-in-out">
-                <a href="project1.html">
-                    <div id="project1" class="border-b-4 border-r-4 border-pink-300 rounded-br-3xl py-4 grid grid-cols-5 gap-4" data-aos="zoom-in">
-                        <img src="./assets/img/zwemmer.jpg" alt="Zwemmer" class="rounded-xl mr-auto col-span-2">
-                        <h2 class="text-center text-2xl lg:text-4xl font-titelklein col-span-3 my-auto">Project PHP</h2>
-                    </div>
-                </a>
+            <div class="mt-12 px-8">
+                <div class="transform lg:hover:scale-95 duration-300 ease-in-out">
+                    <a href="project1.html">
+                        <div id="project1" class="border-b-4 border-r-4 border-pink-300 rounded-br-3xl py-4 grid grid-cols-5 gap-4"
+                             data-aos="zoom-in" data-aos-easing="linear">
+                            <img src="./assets/img/zwemmer.jpg" alt="Zwemmer" class="rounded-xl mr-auto col-span-2">
+                            <h2 class="text-center text-2xl lg:text-4xl font-titelklein col-span-3 my-auto">Project PHP</h2>
+                        </div>
+                    </a>
+                </div>
             </div>
 
             <div class="mt-12 px-8 transform lg:hover:scale-95 duration-300 ease-in-out">
-                <a href="project2.html">
-                    <div id="project2" class="border-b-4 border-r-4 border-pink-300 rounded-br-3xl py-4 grid grid-cols-5 gap-4" data-aos="zoom-in">
-                        <img src="./assets/img/zwemmer.jpg" alt="Zwemmer" class="rounded-xl mr-auto col-span-2">
-                        <h2 class="text-center text-2xl lg:text-4xl font-titelklein col-span-3 my-auto">Cordova</h2>
-                    </div>
-                </a>
+                <div class="transform lg:hover:scale-95 duration-300 ease-in-out">
+                    <a href="project2.html">
+                        <div id="project3" class="border-b-4 border-r-4 border-pink-300 rounded-br-3xl py-4 grid grid-cols-5 gap-4"
+                             data-aos="zoom-in" data-aos-easing="linear">
+                            <img src="./assets/img/zwemmer.jpg" alt="Zwemmer" class="rounded-xl mr-auto col-span-2">
+                            <h2 class="text-center text-2xl lg:text-4xl font-titelklein col-span-3 my-auto">Portfolio</h2>
+                        </div>
+                    </a>
+                </div>
             </div>
 
-            <div class="mt-12 px-8 transform lg:hover:scale-95 duration-300 ease-in-out">
-                <a href="project3.html">
-                    <div id="project3" class="border-b-4 border-r-4 border-pink-300 rounded-br-3xl py-4 grid grid-cols-5 gap-4" data-aos="zoom-in">
-                        <img src="./assets/img/zwemmer.jpg" alt="Zwemmer" class="rounded-xl mr-auto col-span-2">
-                        <h2 class="text-center text-2xl lg:text-4xl font-titelklein col-span-3 my-auto">Portfolio</h2>
-                    </div>
-                </a>
+            <div class="mt-12 px-8">
+                <div class="transform lg:hover:scale-95 duration-300 ease-in-out">
+                    <a href="project3.html">
+                        <div id="project2" class="border-b-4 border-r-4 border-pink-300 rounded-br-3xl py-4 grid grid-cols-5 gap-4"
+                             data-aos="zoom-in" data-aos-easing="linear">
+                            <img src="./assets/img/zwemmer.jpg" alt="Zwemmer" class="rounded-xl mr-auto col-span-2">
+                            <h2 class="text-center text-2xl lg:text-4xl font-titelklein col-span-3 my-auto">LM-SOUNDS</h2>
+                        </div>
+                    </a>
+                </div>
             </div>
-
         </div>
     </div>
 </section>
 
-<section id="yeet" class="min-h-screen bg-black text-white pt-16">
+<section id="cv" class="min-h-screen bg-black text-white pt-16 flex">
+    <div class="m-auto container">
+        <h1 class="text-center mb-8 md:mb-20 underline text-6xl font-semibold font-titel" data-aos="zoom-in" data-aos-easing="linear">CV</h1>
 
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="lg:mb-4" data-aos="zoom-in" data-aos-easing="linear">
+                <h2 class="text-center text-4xl font-titel underline">School</h2>
+
+                <div class="text-center pt-8">
+                    <h3 class="text-center text-2xl pb-2 font-semibold">Bachelor Toegepaste Informatica</h3>
+                    <p><i class="fas fa-map-marker-alt mr-2"></i>Thomas More Hogeschool Kempen</p>
+                    <p><i class="fas fa-clock mr-2"></i>September 2019 - June 2022</p>
+                </div>
+
+                <div class="text-center pt-8 lg:pt-16">
+                    <h4 class="text-center text-2xl pb-2 font-semibold">Elektriciteit - Elektronica</h4>
+                    <p><i class="fas fa-map-marker-alt mr-2"></i>Technisch Instituut Scheppers Herentals</p>
+                    <p><i class="fas fa-clock mr-2"></i>September 2012 - June 2019</p>
+                </div>
+            </div>
+
+            <div class="mt-16 lg:mt-0 lg:mb-4" data-aos="zoom-in" data-aos-easing="linear">
+                <h2 class="text-center text-4xl font-titel underline">Work</h2>
+
+                <div class="text-center pt-8">
+                    <h3 class="text-center text-2xl pb-2 font-semibold">Winkelmedewerker</h3>
+                    <p><i class="fas fa-map-marker-alt mr-2"></i>Action - Herentals</p>
+                    <p><i class="fas fa-clock mr-2"></i>Augustus 2017 - Heden</p>
+                </div>
+
+                <div class="text-center pt-8 lg:pt-16">
+                    <h4 class="text-center text-2xl pb-2 font-semibold">Ober</h4>
+                    <p><i class="fas fa-map-marker-alt mr-2"></i>De Wijnkelder - Olen</p>
+                    <p><i class="fas fa-clock mr-2"></i>Juni 2016 - Juni 2017</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </section>
+
+<footer class="bg-black text-white">
+    <p class="text-center font-titel text-2xl py-2">&copy; <span id="jaar"></span> Maxim Snoeys</p>
+</footer>
+
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 300
+    });
+</script>
 
 <script>
     function navToggle() {
@@ -176,14 +239,12 @@
         nav.classList.toggle('flex');
         nav.classList.toggle('hidden');
     }
-</script>
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init({
-        easing: 'ease-out-back',
-        duration: 800
-    });
+    document.getElementById("jaar").innerHTML = new Date().getFullYear();
+    var labels = document.getElementsByClassName("star");
+    for (i = 0; i < labels.length; i++) {
+        labels[i].innerHTML += "&ast;"
+    }
 </script>
 </body>
 </html>

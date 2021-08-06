@@ -23,7 +23,7 @@ module.exports = {
             }
         },
         fontFamily: {
-            'titel': ['"Indie Flower"', 'cursive'],
+            'titel': ['Staatliches', 'cursive'],
             'titelklein': ['Tourney', 'cursive']
         }
     },
