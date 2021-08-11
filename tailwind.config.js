@@ -1,11 +1,10 @@
 module.exports = {
-    // purge: {
-    //     enabled: true,
-    //     content: [
-    //         './dist/*.html',
-    //         './dist/error/*.html',
-    //     ],
-    // },
+    purge: {
+        enabled: false,
+        content: [
+            './dist/*.html',
+        ],
+    },
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
