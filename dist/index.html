@@ -29,7 +29,7 @@
 <body class="static">
 
 <nav id="site-menu"
-     class="z-40 flex flex-col md:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-gray-100 fixed top-0">
+     class="z-40 flex flex-col md:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-palette3 text-palette4 fixed top-0">
     <div class="w-full md:w-auto self-start md:self-center flex flex-row md:flex-none flex-no-wrap justify-between items-center lg:ml-2">
         <p class="no-underline py-1 cursor-pointer" onclick="scroller('landing')">
             <span class="font-bold text-lg tracking-widest font-titel text-2xl">Maxim Snoeys</span>
@@ -45,13 +45,13 @@
             <span class="hover:border-pink-300 hover:border-b-4 transition ease-in-out duration-300 font-titel text-2xl">Me</span>
         </p>
         <p class="text-dark font-bold text-lg w-full no-underline md:w-auto md:px-4 py-2 md:py-1 md:pt-2 cursor-pointer"
-           onclick="navToggle(), scroller('skills')">
-            <span class="hover:border-pink-300 hover:border-b-4 transition ease-in-out duration-300 font-titel text-2xl">Skills</span>
+           onclick="navToggle(), scroller('cv')">
+            <span class="hover:border-pink-300 hover:border-b-4 transition ease-in-out duration-300 font-titel text-2xl">CV</span>
         </p>
-        <p class="text-dark font-bold text-lg w-full no-underline md:w-auto md:px-4 py-2 md:py-1 md:pt-2 cursor-pointer"
-           onclick="navToggle(), scroller('xp')">
-            <span class="hover:border-pink-300 hover:border-b-4 transition ease-in-out duration-300 font-titel text-2xl">XP</span>
-        </p>
+        <!--        <p class="text-dark font-bold text-lg w-full no-underline md:w-auto md:px-4 py-2 md:py-1 md:pt-2 cursor-pointer"-->
+        <!--           onclick="navToggle(), scroller('stage')">-->
+        <!--            <span class="hover:border-pink-300 hover:border-b-4 transition ease-in-out duration-300 font-titel text-2xl">Stage</span>-->
+        <!--        </p>-->
         <p class="text-dark font-bold text-lg w-full no-underline md:w-auto md:px-4 py-2 md:py-1 md:pt-2 cursor-pointer"
            onclick="navToggle(), scroller('projects')">
             <span class="hover:border-pink-300 hover:border-b-4 transition ease-in-out duration-300 font-titel text-2xl">Projects</span>
@@ -63,8 +63,9 @@
     <div class="container mx-auto">
         <div class="min-h-screen">
             <div class="text-center sticky top-20 lg:top-0 lg:top-1/4">
-                <h1 class="text-8xl font-semibold font-titel lg:pb-8">
-                    Maxim Snoeys<span class="hidden lg:inline-block text-xl font-titelklein ml-1">webdeveloper</span>
+                <h1 class="text-8xl font-titel lg:pb-8">
+                    <span class="font-semibold">Maxim Snoeys</span><span
+                        class="hidden lg:inline-block text-xl font-titelklein ml-1">webdeveloper</span>
                 </h1>
                 <p class="lg:hidden text-3xl font-titelklein py-4">webdeveloper</p>
             </div>
@@ -72,99 +73,63 @@
     </div>
 </section>
 
-<section id="me" class="min-h-screen bg-black text-white flex pt-16">
+<section id="me" class="min-h-screen bg-palette4 text-palette3 flex pt-16">
     <div class="m-auto container">
-        <h1 class="text-center mb-8 md:mb-20 underline text-6xl font-semibold font-titel" data-aos="zoom-in"
-            data-aos-easing="linear">Me</h1>
+        <h1 class="text-center mb-8 text-6xl font-semibold font-titel" data-aos="zoom-in"
+            data-aos-easing="linear">Who am I ?</h1>
 
         <div data-aos="zoom-in" data-aos-easing="linear">
             <div class="lg:flex lg:w-3/5 lg:m-auto">
                 <img src="./assets/img/maxim.jpg" alt="Maxim Snoeys"
                      class="rounded-full m-auto lg:flex-none h-auto w-auto">
-                <p class="text-center m-auto px-8 pt-8 lg:pt-0 lg:flex-1">Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit. Aut deleniti facilis ipsam iusto minima nobis pariatur
-                    praesentium reiciendis similique tempora? Animi esse ex provident. Aliquam et odit quae qui
-                    vitae.</p>
-            </div>
-
-            <div class="hidden md:block">
-                <div class="flex flex-row justify-center mt-16">
-                    <div class="mx-8 transform lg:hover:scale-90 duration-300 ease-in-out">
-                        <a href="https://www.linkedin.com/in/maxim-snoeys-6130301b8/" target="_blank" rel="noopener">
-                            <i class="fab fa-linkedin fa-5x"></i>
-                        </a>
-                    </div>
-
-                    <div class="mx-8 transform lg:hover:scale-90 duration-300 ease-in-out">
-                        <a href="https://twitter.com/MaximSnoeys" target="_blank" rel="noopener">
-                            <i class="fab fa-twitter fa-5x"></i>
-                        </a>
-                    </div>
-
-                    <div class="mx-8 transform lg:hover:scale-90 duration-300 ease-in-out">
-                        <a href="mailto:maxim.snoeys@telenet.be">
-                            <i class="fas fa-envelope fa-5x"></i>
-                        </a>
-                    </div>
-
-                    <div class="mx-8 transform lg:hover:scale-90 duration-300 ease-in-out">
-                        <a href="https://discordapp.com/users/220994676507934720" target="_blank" rel="noopener">
-                            <i class="fab fa-discord fa-5x"></i>
-                        </a>
-                    </div>
+                <div class="text-center m-auto px-8 pt-8 lg:pt-0 lg:flex-1">
+                    <p >
+                        Hi, i'm Maxim Snoeys, student Application Development in Geel.
+                        My interest mostly lay in the webdevelopment side of things.
+                    </p>
+                    <p class="pt-4">
+                        With my knowledge of electronics from secondary school I like to make some stuff for my DIY racing
+                        simulator. Also, I like to cook delicious things!
+                    </p>
                 </div>
             </div>
 
-            <div class="md:hidden justify-center text-center mt-16">
-                <div class="grid grid-cols-2" data-aos="zoom-in" data-aos-easing="linear">
-                    <div class="my-8">
-                        <a href="https://www.linkedin.com/in/maxim-snoeys-6130301b8/" target="_blank" rel="noopener">
-                            <i class="fab fa-linkedin fa-5x"></i>
-                        </a>
-                    </div>
-
-                    <div class="my-8">
-                        <a href="https://twitter.com/MaximSnoeys" target="_blank" rel="noopener">
-                            <i class="fab fa-twitter fa-5x"></i>
-                        </a>
-                    </div>
+            <div class="flex flex-row justify-center mt-16">
+                <div class="mx-8 transform lg:hover:scale-90 duration-300 ease-in-out">
+                    <a href="https://www.linkedin.com/in/maxim-snoeys-6130301b8/" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin fa-5x"></i>
+                    </a>
                 </div>
 
-                <div class="grid grid-cols-2" data-aos="zoom-in" data-aos-easing="linear">
-                    <div class="my-8">
-                        <a href="mailto:maxim.snoeys@telenet.be">
-                            <i class="fas fa-envelope fa-5x"></i>
-                        </a>
-                    </div>
-
-                    <div class="my-8">
-                        <a href="https://discordapp.com/users/220994676507934720" target="_blank" rel="noopener">
-                            <i class="fab fa-discord fa-5x"></i>
-                        </a>
-                    </div>
+                <div class="mx-8 transform lg:hover:scale-90 duration-300 ease-in-out">
+                    <a href="mailto:maxim.snoeys@telenet.be">
+                        <i class="fas fa-envelope fa-5x"></i>
+                    </a>
                 </div>
-
             </div>
         </div>
     </div>
 </section>
 
-<section id="skills" class="min-h-screen bg-black text-white flex pt-16">
+<section id="cv" class="min-h-screen bg-palette4 text-palette3 flex pt-16">
     <div class="m-auto container">
-        <h1 class="text-center mb-8 md:mb-20 underline text-6xl font-semibold font-titel" data-aos="zoom-in"
-            data-aos-easing="linear">Skills</h1>
+        <div class="text-center mb-8" data-aos="zoom-in" data-aos-easing="linear">
+            <h1 class="text-6xl font-semibold font-titel mb-8">CV</h1>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3">
-            <div class="mt-8 lg:mt-0 lg:mb-4 lg:col-span-2 mx-auto" data-aos="zoom-in" data-aos-easing="linear">
+            <a href="assets/cv_MaximSnoeys.pdf" class="text-2xl font-titel underline" target="_blank">Download my CV as PDF</a>
+        </div>
+
+        <div class="lg:flex">
+            <div class="mt-8 lg:mt-0 lg:mb-4 lg:w-2/3 mx-8 lg:mx-16" data-aos="zoom-in" data-aos-easing="linear">
                 <h2 class="text-center text-4xl font-titel underline">Tech</h2>
 
                 <div class="pt-8 grid grid-cols-1 lg:grid-cols-2">
-                    <div class="lg:mr-12">
+                    <div class="mr-0 lg:mr-16">
                         <div class="pb-6 flex">
                             <div class="my-auto">
                                 <i class="fab fa-html5 fa-3x"></i>
                             </div>
-                            <div class="pl-4 ml-auto text-right">
+                            <div class="ml-auto pl-8 text-right border-palette3 border-r-4 pr-4">
                                 <h3 class=" text-2xl font-semibold">HTML</h3>
                                 <p>W3C valid HTML</p>
                             </div>
@@ -174,9 +139,9 @@
                             <div class="my-auto">
                                 <i class="fab fa-css3-alt fa-3x"></i>
                             </div>
-                            <div class="pl-4 ml-auto text-right">
+                            <div class="ml-auto pl-8 text-right border-palette3 border-r-4 pr-4">
                                 <h3 class=" text-2xl font-semibold">CSS</h3>
-                                <p>W3C valid CSS</p>
+                                <p>Tailwind, Bootstrap, SASS</p>
                             </div>
                         </div>
 
@@ -184,21 +149,21 @@
                             <div class="my-auto">
                                 <i class="fab fa-js-square fa-3x"></i>
                             </div>
-                            <div class="pl-4 ml-auto text-right">
+                            <div class="ml-auto pl-8 text-right border-palette3 border-r-4 pr-4">
                                 <h3 class=" text-2xl font-semibold">Javascript</h3>
-                                <p>Working on it</p>
+                                <p>React (native)</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="lg:ml-12">
+                    <div class="ml-0 lg:ml-16">
                         <div class="pb-6 flex">
-                            <div class="my-auto">
+                            <div class="my-auto pr-20">
                                 <i class="fab fa-php fa-3x"></i>
                             </div>
-                            <div class="pl-4 ml-auto text-right">
+                            <div class="ml-auto pl-8 text-right border-palette3 border-r-4 pr-4">
                                 <h3 class=" text-2xl font-semibold">PHP</h3>
-                                <p>Lorem ipsum.</p>
+                                <p>Laravel</p>
                             </div>
                         </div>
 
@@ -206,23 +171,23 @@
                             <div class="my-auto">
                                 <i class="fas fa-database fa-3x"></i>
                             </div>
-                            <div class="pl-4 ml-auto text-right">
+                            <div class="ml-auto pl-8 text-right border-palette3 border-r-4 pr-4">
                                 <h3 class=" text-2xl font-semibold">SQL</h3>
-                                <p>Lorem ipsum.</p>
+                                <p>MySQL</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="mt-8 lg:mt-0 lg:mb-4 mx-auto" data-aos="zoom-in" data-aos-easing="linear">
+            <div class="mt-8 lg:mt-0 lg:mb-4 lg:w-1/3 mx-8 lg:mx-16" data-aos="zoom-in" data-aos-easing="linear">
                 <h2 class="text-center text-4xl font-titel underline">Languages</h2>
                 <div class="pt-8">
                     <div class="pb-6 flex">
-                        <div class="my-auto">
+                        <div class="my-auto pr-20">
                             <img src="./assets/img/svg/077-netherlands.svg" alt="Netherlands Flag" class="w-10">
                         </div>
-                        <div class="pl-4 ml-auto text-right">
+                        <div class="ml-auto pl-8 text-right border-palette3 border-r-4 pr-4">
                             <h3 class=" text-2xl font-semibold">Dutch</h3>
                             <p>Mothertongue</p>
                         </div>
@@ -230,11 +195,12 @@
 
                     <div class="pb-6 flex">
                         <div class="my-auto">
-                            <img src="./assets/img/svg/110-united%20kingdom.svg" alt="United Kingdom Flag" class="w-10">
+                            <img src="./assets/img/svg/110-united%20kingdom.svg" alt="United Kingdom Flag"
+                                 class="w-10">
                         </div>
-                        <div class="pl-4 ml-auto text-right">
+                        <div class="ml-auto pl-8 text-right border-palette3 border-r-4 pr-4">
                             <h3 class=" text-2xl font-semibold">English</h3>
-                            <p>Fluent</p>
+                            <p>Good, C1</p>
                         </div>
                     </div>
 
@@ -242,7 +208,7 @@
                         <div class="my-auto">
                             <img src="./assets/img/svg/208-germany.svg" alt="Germany Flag" class="w-10">
                         </div>
-                        <div class="pl-4 ml-auto text-right">
+                        <div class="ml-auto pl-8 text-right border-palette3 border-r-4 pr-4">
                             <h3 class=" text-2xl font-semibold">German</h3>
                             <p>I understand it</p>
                         </div>
@@ -252,37 +218,26 @@
                         <div class="my-auto">
                             <img src="./assets/img/svg/197-france.svg" alt="French Flag" class="w-10">
                         </div>
-                        <div class="pl-4 ml-auto text-right">
+                        <div class="ml-auto pl-8 text-right border-palette3 border-r-4 pr-4">
                             <h3 class=" text-2xl font-semibold">French</h3>
                             <p>I understand basic</p>
                         </div>
                     </div>
-
-
                 </div>
-
             </div>
         </div>
 
-    </div>
-</section>
-
-<section id="xp" class="min-h-screen bg-black text-white pt-16 flex">
-    <div class="m-auto container">
-        <h1 class="text-center mb-8 md:mb-20 underline text-6xl font-semibold font-titel" data-aos="zoom-in"
-            data-aos-easing="linear">Experiences</h1>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="grid grid-cols-1 lg:grid-cols-2 mt-16">
             <div class="mb-4 lg:mb-0" data-aos="zoom-in" data-aos-easing="linear">
                 <h2 class="text-center text-4xl font-titel underline">School</h2>
 
-                <div class="text-left lg:text-center mt-4 mx-8 lg:mx-20 xl:mx-32 border-r-4 lg:border-r-0 lg:border-b-4 lg:pb-4 border-pink-300">
+                <div class="text-left lg:text-center mt-4 mx-8 lg:mx-20 xl:mx-32 border-r-4 lg:border-r-0 lg:border-b-4 lg:pb-4 border-palette3">
                     <h3 class="text-2xl pb-2 font-semibold">Bachelor Toegepaste Informatica</h3>
                     <p><i class="fas fa-map-marker-alt mr-2"></i>Thomas More Hogeschool Kempen</p>
                     <p><i class="fas fa-clock mr-2"></i>September 2019 - June 2022</p>
                 </div>
 
-                <div class="text-left lg:text-center mt-8 lg:mt-16 mx-8 lg:mx-20 xl:mx-32 border-r-4 lg:border-r-0 lg:border-b-4 lg:pb-4 border-pink-300">
+                <div class="text-left lg:text-center mt-8 lg:mt-16 mx-8 lg:mx-20 xl:mx-32 border-r-4 lg:border-r-0 lg:border-b-4 lg:pb-4 border-palette3">
                     <h4 class="text-2xl pb-2 font-semibold">Elektriciteit - Elektronica</h4>
                     <p><i class="fas fa-map-marker-alt mr-2"></i>Technisch Instituut Scheppers Herentals</p>
                     <p><i class="fas fa-clock mr-2"></i>September 2012 - June 2019</p>
@@ -292,36 +247,44 @@
             <div class="mt-16 lg:mt-0 mb-4 lg:mb-0" data-aos="zoom-in" data-aos-easing="linear">
                 <h2 class="text-center text-4xl font-titel underline">Work</h2>
 
-                <div class="text-left lg:text-center mt-4 mx-8 lg:mx-20 xl:mx-32 border-r-4 lg:border-r-0 lg:border-b-4 lg:pb-4 border-pink-300">
+                <div class="text-left lg:text-center mt-4 mx-8 lg:mx-20 xl:mx-32 border-r-4 lg:border-r-0 lg:border-b-4 lg:pb-4 border-palette3">
                     <h3 class="text-2xl pb-2 font-semibold">Retail employee (Student)</h3>
                     <p><i class="fas fa-map-marker-alt mr-2"></i>Action - Herentals</p>
                     <p><i class="fas fa-clock mr-2"></i>August 2017 - Present</p>
                 </div>
 
-                <div class="text-left lg:text-center mt-8 lg:mt-16 mx-8 lg:mx-20 xl:mx-32 border-r-4 lg:border-r-0 lg:border-b-4 lg:pb-4 border-pink-300">
+                <div class="text-left lg:text-center mt-8 lg:mt-16 mx-8 lg:mx-20 xl:mx-32 border-r-4 lg:border-r-0 lg:border-b-4 lg:pb-4 border-palette3">
                     <h4 class="text-2xl pb-2 font-semibold">Waiter (Student)</h4>
                     <p><i class="fas fa-map-marker-alt mr-2"></i>De Wijnkelder - Olen</p>
                     <p><i class="fas fa-clock mr-2"></i>June 2016 - June 2017</p>
                 </div>
-
             </div>
         </div>
     </div>
 </section>
 
-<section id="projects" class="min-h-screen bg-black text-white flex pt-16">
+<!--<section id="stage" class="min-h-screen bg-black text-white pt-16 flex">-->
+<!--    <div class="m-auto container">-->
+<!--        <h1 class="text-center mb-8 md:mb-20 text-6xl font-semibold font-titel" data-aos="zoom-in"-->
+<!--            data-aos-easing="linear">Stage</h1>-->
+
+
+<!--    </div>-->
+<!--</section>-->
+
+<section id="projects" class="min-h-screen bg-palette4 text-palette3 flex pt-16">
     <div class="m-auto container">
-        <h1 class="text-center mb-8 md:mb-20 underline text-6xl font-semibold font-titel" data-aos="zoom-in"
-            data-aos-easing="linear">Projects</h1>
+        <h1 class="text-center mb-8 text-6xl font-semibold font-titel" data-aos="zoom-in"
+            data-aos-easing="linear">My projects</h1>
 
         <div class="grid grid-cols-1 lg:grid-cols-2">
             <div class="mt-12 px-8">
                 <div class="transform lg:hover:scale-95 duration-300 ease-in-out">
-                    <a href="pages/project1.html">
+                    <a href="pages/project1.html" target="_blank">
                         <div id="project1"
-                             class="border-b-4 border-r-4 border-pink-300 rounded-br-3xl pb-4 grid grid-cols-5 gap-4"
+                             class="border-b-4 border-r-4 border-palette3 rounded-br-3xl pb-4 grid grid-cols-5 gap-4"
                              data-aos="zoom-in" data-aos-easing="linear">
-                            <img src="./assets/img/zwemmer.jpg" alt="Zwemmer"
+                            <img src="./assets/img/php/php.JPG" alt="Project PHP"
                                  class="rounded-xl mr-auto col-span-2 h-auto w-auto">
                             <h2 class="text-center text-2xl lg:text-4xl font-titelklein col-span-3 my-auto">Project
                                 PHP</h2>
@@ -330,13 +293,13 @@
                 </div>
             </div>
 
-            <div class="mt-12 px-8 transform lg:hover:scale-95 duration-300 ease-in-out">
+            <div class="mt-12 px-8">
                 <div class="transform lg:hover:scale-95 duration-300 ease-in-out">
-                    <a href="pages/project2.html">
-                        <div id="project3"
-                             class="border-b-4 border-r-4 border-pink-300 rounded-br-3xl pb-4 grid grid-cols-5 gap-4"
+                    <a href="pages/project2.html" target="_blank">
+                        <div id="project2"
+                             class="border-b-4 border-r-4 border-palette3 rounded-br-3xl pb-4 grid grid-cols-5 gap-4"
                              data-aos="zoom-in" data-aos-easing="linear">
-                            <img src="./assets/img/zwemmer.jpg" alt="Zwemmer"
+                            <img src="./assets/img/portfolio/wie.PNG" alt="Portfolio"
                                  class="rounded-xl mr-auto col-span-2 h-auto w-auto">
                             <h2 class="text-center text-2xl lg:text-4xl font-titelklein col-span-3 my-auto">
                                 Portfolio</h2>
@@ -347,14 +310,29 @@
 
             <div class="mt-12 px-8">
                 <div class="transform lg:hover:scale-95 duration-300 ease-in-out">
-                    <a href="pages/project3.html">
-                        <div id="project2"
-                             class="border-b-4 border-r-4 border-pink-300 rounded-br-3xl pb-4 grid grid-cols-5 gap-4"
+                    <a href="pages/project3.html" target="_blank">
+                        <div id="project3"
+                             class="border-b-4 border-r-4 border-palette3 rounded-br-3xl pb-4 grid grid-cols-5 gap-4"
                              data-aos="zoom-in" data-aos-easing="linear">
-                            <img src="./assets/img/zwemmer.jpg" alt="Zwemmer"
+                            <img src="./assets/img/lmsounds/landing.PNG" alt="LM Sounds"
                                  class="rounded-xl mr-auto col-span-2 h-auto w-auto">
                             <h2 class="text-center text-2xl lg:text-4xl font-titelklein col-span-3 my-auto">
                                 LM-SOUNDS</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-12 px-8">
+                <div class="transform lg:hover:scale-95 duration-300 ease-in-out">
+                    <a href="pages/project4.html" target="_blank">
+                        <div id="project4"
+                             class="border-b-4 border-r-4 border-palette3 rounded-br-3xl pb-4 grid grid-cols-5 gap-4"
+                             data-aos="zoom-in" data-aos-easing="linear">
+                            <img src="./assets/img/underconstruct.png" alt="Under COnstruction"
+                                 class="rounded-xl mr-auto col-span-2 h-auto w-auto">
+                            <h2 class="text-center text-2xl lg:text-4xl font-titelklein col-span-3 my-auto">
+                                Beverage Rater</h2>
                         </div>
                     </a>
                 </div>
@@ -363,7 +341,7 @@
     </div>
 </section>
 
-<footer class="bg-black text-white">
+<footer class="bg-palette4 text-palette3">
     <p class="text-center font-titel text-2xl py-2">&copy; <span id="jaar"></span> Maxim Snoeys</p>
 </footer>
 

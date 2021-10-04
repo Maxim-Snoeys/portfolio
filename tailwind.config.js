@@ -14,6 +14,18 @@ module.exports = {
             backgroundImage: theme => ({
                 'home': "url('../assets/img/laptop-backlight-dark.jpg')",
             }),
+            colors: {
+                'palette1': '#F798E5',
+                'palette2': '#AE83A5',
+                'palette3': '#4D3A4D',
+                'palette4': '#e7e7e7',
+            },
+            borderColor: theme => ({
+                'palette1': '#F798E5',
+                'palette2': '#AE83A5',
+                'palette3': '#4D3A4D',
+                'palette4': '#e7e7e7',
+            }),
             maxWidth: {
                 '8xl': '85rem'
             },
