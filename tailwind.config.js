@@ -27,6 +27,7 @@ module.exports = {
                 'palette4': '#e7e7e7',
             }),
             maxWidth: {
+                'xxs': '15rem',
                 '8xl': '85rem'
             },
             minHeight: {
