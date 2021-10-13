@@ -55,19 +55,18 @@
 </nav>
 
 
-<section id="yeet" class="min-h-screen bg-palette4 text-palette3 pt-16 grid grid-cols-1 md:grid-cols-5 ">
+<section id="yeet" class="min-h-screen bg-palette4 text-palette3 pt-16 grid grid-cols-1 md:grid-cols-5">
     <div class="md:col-span-2 mt-8 md:my-auto mx-auto md:mx-0 md:ml-12 lg:ml-24">
         <h1 class="font-titel text-5xl">Project PHP</h1>
 
         <div>
-            <p class="font-titelklein text-2xl">2020 - 2021</p>
-            <p class="font-titelklein text-2xl">Semester 2</p>
+            <p class="font-titelklein text-2xl text-center md:text-left">2020 - 2021</p>
+            <p class="font-titelklein text-2xl text-center md:text-left">Semester 2</p>
         </div>
 
-        <div class="mt-8">
-            <a href="https://maximsnoeys.site" target="_blank" class="text-2xl font-titel underline">
-                View the result here
-            </a>
+        <div class="mt-8 text-center md:text-left">
+            <a href="https://maximsnoeys.site" target="_blank"
+               class="text-2xl font-titel underline ">View the result here</a>
         </div>
     </div>
 
@@ -79,22 +78,37 @@
             <img src="../assets/img/php/phpinlog.JPG" alt="PHP loginpage" class="m-auto">
         </div>
 
-        <p class="mt-4 text-justify">For the course 'Project PHP' me and my team (KM-B) made a webapplication for the
+        <p class="mt-4 text-justify">For the course 'Project PHP' me and my team (KM-B) made a webapplication for
+            the
             swimming pool of our client</p>
         <p class="mt-4 text-justify">In the course 'Requirement Analysis' we made a prototype with documentation for
-            another client (teacher) his/her project. We got documentation from the other groups and a conversation with
-            the client to make sure we knew what the application should be. The 'Scrum' projectstructure was a challenge
-            in the beginning of the project, but after some time we figured it out so we could track the progress of the
+            another client (teacher) his/her project. We got documentation from the other groups and a conversation
+            with
+            the client to make sure we knew what the application should be. The 'Scrum' projectstructure was a
+            challenge
+            in the beginning of the project, but after some time we figured it out so we could track the progress of
+            the
             project very easily.</p>
-        <p class="mt-4 text-justify'">As 'Scrum Leader' I made sure the startup of the project was being done correct.
+        <p class="mt-4 text-justify'">As 'Scrum Leader' I made sure the startup of the project was being done
+            correct.
             I set up the initial projectfiles, made the correct structure + a 'to-do' list on Jira.
             Ofcourse I worked on the project itself aswell. In terms of functional pages I made the homepage for
             admin/teacher, FAQ page and swimminglesson & swimmingparty-timestamps management page.</p>
-        <p class="mt-4 text-justify">Page layout is something that is important to me, so I've spent quite a bit of time
+        <p class="mt-4 text-justify">Page layout is something that is important to me, so I've spent quite a bit of
+            time
             at it on this project.</p>
     </div>
 </section>
 
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000
+    });
+</script>
 
 <script>
     function navToggle() {
@@ -105,14 +119,6 @@
         nav.classList.toggle('flex');
         nav.classList.toggle('hidden');
     }
-</script>
-
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init({
-        easing: 'ease-out-back',
-        duration: 1000
-    });
 </script>
 </body>
 </html>
